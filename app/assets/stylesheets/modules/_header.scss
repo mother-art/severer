@@ -1,0 +1,14 @@
+.header {
+  background-color: palevioletred;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .login {
+    margin-right: 50px;
+  }
+  .app-title {
+    margin-left: 50px;
+    font-size: 30px;
+  }
+}

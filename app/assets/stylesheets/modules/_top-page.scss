@@ -1,0 +1,61 @@
+.all {
+  height: 1200px;
+  font-family: 'YuMincho';
+  background-image: image-url("back.jpg");
+  background-position: center;
+  background-size: cover;
+  .main {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    font-size: 17px;
+    text-shadow: 0 0 4px black;
+    a { text-decoration: none;
+        color: white;}
+    .memo {
+      height: 220px;
+      width: 30vw;
+      min-width: 200px;
+      margin: 0 10px;
+      border-radius: 4px;
+      background-image: image-url("memo.jpg");
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      &__title {
+        margin-top: 20px;
+      }
+    }
+    .album {
+      height: 220px;
+      width: 30vw;
+      min-width: 200px;
+      margin: 0 10px;
+      border-radius: 4px;
+      background-image: image-url("album.jpg");
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      &__title {
+        margin-top: 20px;
+      }
+    }
+    .task {
+      height: 220px;
+      width: 30vw;
+      min-width: 200px;
+      margin: 0 10px;
+      border-radius: 4px;
+      background-image: image-url("brain.jpg");
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      &__title {
+        margin-top: 20px;
+      }
+    }
+  }
+}

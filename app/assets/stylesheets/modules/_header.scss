@@ -1,9 +1,17 @@
 .header {
-  background-color: palevioletred;
+  background: rgba(255, 201, 119, 0.578);
+  background-image: image-url("back.jpg");
+  background-position: center;
+  background-size: cover;
   height: 140px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  opacity: 0.9;
+  a { text-decoration: none;
+      color: white;
+      text-shadow: 0 0 3px black;
+    }
   .login {
     margin-right: 50px;
   }

@@ -1,2 +1,12 @@
-= render 'layouts/header'
-.memo ブラウザメモ
+.all
+  = render 'layouts/header'
+  .main
+    = link_to "#" do
+      .memo
+        .memo__title ブラウザメモ
+    = link_to "#" do
+      .album
+        .album__title ブラウザアルバム
+    = link_to "#" do
+      .task
+        .task__title タスクマネージャー

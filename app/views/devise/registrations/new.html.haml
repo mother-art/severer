@@ -1,0 +1,41 @@
+= render 'layouts/header'
+.users-new
+  .users-new__title
+    %p Create Account
+    = render "devise/shared/links"
+  .account-page__inner--right.user-form
+    = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+      = devise_error_messages!
+      .field
+        .field-label
+          = f.label :name
+        .field-input
+          = f.text_field :name, autofocus: true
+      .field
+        .field-label
+          = f.label :email
+        .field-input
+          = f.email_field :email
+      .filed
+        .field-label
+          = f.label :age
+        .filed-input
+          = f.number_field :age
+      .filed
+        .field-label{style: "display:none"}
+          = f.label :level
+        .filed-input{style: "display:none"}
+          = f.number_field :level, value: 0, style: "{color: red;}"
+      .field
+        .field-label
+          = f.label :password
+          %i (英数字8文字以上)
+        .field-input
+          = f.password_field :password, autocomplete: "off"
+      .field
+        .field-label
+          = f.label :password_confirmation
+        .field-input
+          = f.password_field :password_confirmation, autocomplete: "off"
+      .actions
+        = f.submit "Create Account", class: 'btn'

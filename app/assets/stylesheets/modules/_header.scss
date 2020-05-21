@@ -12,11 +12,19 @@
       color: white;
       text-shadow: 0 0 3px black;
     }
-  .login {
-    margin-right: 50px;
-  }
   .app-title {
     margin-left: 50px;
     font-size: 30px;
   }
+  .right {
+    margin-right: 50px;
+    &__name {
+      color: white;
+      text-shadow: 0 0 3px black;
+    }
+    &__login, &__logout {
+
+    }
+  }
+  
 }

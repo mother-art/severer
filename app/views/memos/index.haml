@@ -1,12 +1,12 @@
 = render 'layouts/header'
 .memo-page
-  = link_to "#" do
+  = link_to new_memo_path do
     .memo-page__new 
       %i{class: "fas fa-feather-alt"}
-  .memo-page__memos
-    .memo-page__memos__title 食材
-    .memo-page__memos__title 歌詞
-    .memo-page__memos__title 誕生日リスト
-    .memo-page__memos__title アーティスト
-    .memo-page__memos__title パスワード
-    .memo-page__memos__title メールアドレス
+  - @memos.each do |memo|
+    .memo-page__memos
+      .memo-page__memos__title
+        = link_to edit_memo_path(memo) do
+          = memo.title
+      .memo-page__memos__body
+        = memo.body

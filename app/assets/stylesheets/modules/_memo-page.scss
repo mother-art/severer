@@ -5,19 +5,13 @@
     color: black;
   }
   &__new {
-    height: 100px;
-    width: 100px;
-    font-size: 40px;
     color: brown;
     background-color: rgb(255, 194, 119);
-    border-radius: 100px;
     border: solid 1px rgb(234, 141, 29);
-    opacity: 0.8;
-    position: fixed;
-    bottom: 40px;
+    @include btn-style;
     right: 40px;
-    outline: 0;
     @include display-center;
+    transform: none;
   }
   &__memos {
     height: 100px;
@@ -57,37 +51,19 @@
       }
       &__btn {
         &__save {
-          height: 100px;
-          width: 100px;
-          font-size: 30px;
           color: brown;
           background-color: rgb(255, 194, 119);
-          border-radius: 100px;
           border: solid 1px rgb(234, 141, 29);
-          opacity: 0.8;
-          position: fixed;
-          bottom: 40px;
+          @include btn-style;
           right: 40px;
-          transform: rotate(20deg);
-          outline: 0;
-          cursor: pointer;
           @include display-center;
         }
         &__delete {
-          height: 100px;
-          width: 100px;
-          font-size: 30px;
           color: brown;
           background-color: rgb(255, 194, 119);
-          border-radius: 100px;
           border: solid 1px rgb(234, 141, 29);
-          opacity: 0.8;
-          position: fixed;
-          bottom: 40px;
+          @include btn-style;
           right: 160px;
-          transform: rotate(20deg);
-          outline: 0;
-          cursor: pointer;
           @include display-center;
         }
       }

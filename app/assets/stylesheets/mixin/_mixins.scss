@@ -3,3 +3,17 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin btn-style {
+  height: 100px;
+  width: 100px;
+  font-size: 30px;
+  border-radius: 100px;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 40px;
+  transform: rotate(20deg);
+  outline: 0;
+  cursor: pointer;
+  @include display-center;
+}

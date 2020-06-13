@@ -1,0 +1,10 @@
+.album-page {
+  &__new {
+    color: brown;
+    background-color: rgb(255, 194, 119);
+    border: solid 1px rgb(234, 141, 29);
+    @include btn-style;
+    right: 40px;
+    transform: none;
+  }
+}

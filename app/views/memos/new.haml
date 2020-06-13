@@ -4,4 +4,5 @@
     = form_for @memo do |f|
       = f.text_field :title, class: "new_memo__title", placeholder: " 見出し"
       = f.text_area :body, class: "new_memo__body"
-      = f.submit "保存", class: "new_memo__save"
+      .memo-new__box__btn
+        = f.submit "保存", class: "new_memo__btn__save"

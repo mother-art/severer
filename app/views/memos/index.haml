@@ -3,7 +3,7 @@
   = link_to new_memo_path do
     .memo-page__new 
       %i{class: "fas fa-feather-alt"}
-  - @memos.each do |memo|
+  - @memos.reverse.each do |memo|
     .memo-page__memos
       .memo-page__memos__title
         = link_to edit_memo_path(memo) do

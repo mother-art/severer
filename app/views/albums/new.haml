@@ -1,0 +1,10 @@
+= render 'layouts/header'
+.album-new
+  = form_for @album do |f|
+    = f.text_field :title, class: "new_album__title"
+    = f.fields_for :pictures do |i|
+      = i.label :src, class: "new_album__picture" do
+        -# %div{data: {index: (i.index)}, class: "js-file"}
+        .preview{data: {index: (i.index)}}
+          = i.file_field :src, class: "new_album__picture__hidden"
+    = f.submit "保存",class: "new_album__btn__save"
